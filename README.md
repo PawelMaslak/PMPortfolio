@@ -4,4 +4,5 @@ My personal website portfolio project. Site is deployed at address https://www.p
 Application structure:
   - Front End layer built in Angular
   - Back End layer built using microservices:
+    - API Gateway
     - Contact Microservice
