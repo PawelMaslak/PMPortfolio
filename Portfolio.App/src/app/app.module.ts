@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopMenuComponent,
+    AboutMeComponent,
+    WorkExperienceComponent,
+    MyProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
