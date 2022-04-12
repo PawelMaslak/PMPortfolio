@@ -1,3 +1,43 @@
-.header {
-    background-color: blue;
+$navheight: 100px;
+$font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+.header-nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    //width: 100%;
+    height: $navheight;
+}
+
+.navbar {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: $font-mono;
+}
+
+.links {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+ol {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ol li {
+    margin: 0px 5px;
+    position: relative;
 }
