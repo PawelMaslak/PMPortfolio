@@ -8,7 +8,7 @@ import { AboutComponent } from './content/about/about.component';
 import { WorkComponent } from './content/work/work.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { ContactComponent } from './content/contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './content/footer/footer.component';
 import { WelcomeComponent } from './content/welcome/welcome.component';
 
 @NgModule({

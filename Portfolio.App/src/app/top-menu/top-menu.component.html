@@ -1,20 +1,20 @@
-<header>
-    <nav>
-        <div class="logo">
-            Logo Placeholder
-        </div>
-        <div class="menu">
-            <div class="list">
-                <ol>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Experience</a></li>
-                    <li><a href="#projects">My Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ol>
+<header [ngStyle]="{'top': hidden ? '-80px' : '0px'}" (window:scroll)="onWindowScroll()">
+    <nav class="navbar-content">
+            <div class="logo">
+                Logo Content
             </div>
-            <div class="resume">
-                Resume Placeholder
+            <div class="menu">
+                <div class="list">
+                    <ol>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Experience</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ol>
+                </div>
+                <div class="resume">
+                    Resume Placeholder
+                </div>
             </div>
-        </div>
     </nav>
 </header>
