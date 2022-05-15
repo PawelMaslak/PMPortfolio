@@ -1,7 +1,10 @@
-<div id="root">
+<div id="root" *ngIf="!underConstruction">
   <div class="layout">
-      <app-top-menu></app-top-menu>
-      <app-content></app-content>
-      <app-footer></app-footer>
+    <app-top-menu></app-top-menu>
+    <app-content></app-content>
+    <app-footer></app-footer>
   </div>
+</div>
+<div id="loading">
+  <app-loading></app-loading>
 </div>

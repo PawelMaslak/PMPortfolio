@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-top-menu',
@@ -12,11 +13,12 @@ export class TopMenuComponent {
 
   constructor() { }
 
-  hidden = false;
+  hidden = true;
 
   onWindowScroll() {
-    var currentPageOffset = window.pageYOffset;
-    this.previousWindowPosition > currentPageOffset ? this.hidden = false : this.hidden = true;
-    this.previousWindowPosition = currentPageOffset;
+    this.hidden = true;
+    // var currentPageOffset = window.pageYOffset;
+    // this.previousWindowPosition > currentPageOffset ? this.hidden = false : this.hidden = true;
+    // this.previousWindowPosition = currentPageOffset;
   }
 }
