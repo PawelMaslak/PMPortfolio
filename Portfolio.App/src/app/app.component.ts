@@ -7,15 +7,31 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  
-  underConstruction: boolean = environment.underConstruction;
 
-  async ngOnInit() {
-    await this.delay(2000);
-    //this.underConstruction = false;
+  ngOnInit() {
+    this.load();
   }
 
-  delay(miliseconds: number) {
-    return new Promise( resolve => {setTimeout(resolve, miliseconds)} );
+  load() {
+    const loader = document.querySelector('.loader') as HTMLElement;
+    const main = document.querySelector('.main') as HTMLElement;
+
+    if (!environment.animations) {
+      console.log('Animations are temporaily disabled');
+      loader.style.display = 'none';
+      main.style.display = 'grid';
+      main.style.opacity = '1';
+    }
+    else {
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        loader.style.display = 'none';
+  
+        main.style.display = 'grid';
+        setTimeout(() => {
+          main.style.opacity = '1';
+        }, 50);
+      }, 5300);
+    }
   }
 }
