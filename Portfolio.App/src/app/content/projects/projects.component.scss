@@ -1,0 +1,35 @@
+$bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
+}
+
+.text-container {
+    display: flex;
+}
+
+.text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    background: #00c2cb;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 800px;
+    max-height: 650px;
+    border-radius: 15px;
+    transition: 1s all ease;
+}
+
+.text-box:hover {
+    transform: translateY(-10px);
+}
