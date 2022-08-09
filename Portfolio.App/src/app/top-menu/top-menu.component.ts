@@ -11,14 +11,12 @@ export class TopMenuComponent {
 
   previousWindowPosition = 0;
 
-  constructor() { }
-
-  hidden = true;
+  hidden = false;
 
   onWindowScroll() {
-    this.hidden = true;
-    // var currentPageOffset = window.pageYOffset;
-    // this.previousWindowPosition > currentPageOffset ? this.hidden = false : this.hidden = true;
-    // this.previousWindowPosition = currentPageOffset;
+    //this.hidden = true;
+    var currentPageOffset = window.pageYOffset;
+    this.previousWindowPosition > currentPageOffset ? this.hidden = false : this.hidden = true;
+    this.previousWindowPosition = currentPageOffset;
   }
 }

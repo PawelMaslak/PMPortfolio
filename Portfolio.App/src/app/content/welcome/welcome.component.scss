@@ -1,0 +1,104 @@
+$greeting-colour: gold;
+$bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+$goonies: "Goonies", Arial, Helvetica, sans-serif;
+
+span {
+    font-family: $regular;
+}
+
+.new-lines {
+    span:not(.bold)  {
+        display: list-item;
+        word-break: break-word;
+        list-style: none;
+    }
+    padding-top: 1vh;
+}
+
+.new-line {
+    display: list-item;
+    word-break: break-word;
+    list-style: none;
+}
+
+.bold {
+    font-family: $bold;
+}
+
+.job {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.presentation {
+    height: 10vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.name {
+    font-family: $bold;
+    font-size: clamp(40px, 8vw, 80px);
+    text-transform: uppercase;
+    display: flex;
+}
+
+.my-name {
+    font-size: .8em;
+}
+
+.description {
+    max-width: 540px;
+}
+
+.thank-you {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+  .console {
+    font-family: $regular;
+    width: 800px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    animation: show-console 1s ease-in;
+  }
+
+  @keyframes show-console {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  
+  .console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #555;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #DDD;
+  }
+  
+  .console .consolebody {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow: hidden;
+    background-color: #000;
+    color: #63de00;
+  }
+  
+  .console .consolebody p {
+    line-height: 1.5rem;
+  }

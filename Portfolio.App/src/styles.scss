@@ -6,14 +6,28 @@ html {
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #4c6358;
+    background-color: #42455a;
 }
 
 p {
     margin: 0;
 }
 
-// div, section {
-//     border: 2px solid black
-// }
+div, section {
+    //border: 2px solid #2F2F30
+}
+
+@font-face {
+    font-family: "Goonies";
+    src: local("Goonies"), url(./assets/fonts/Goonies/Goonies.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CascadiaCode";
+    src: local("CascadiaCode"), url(./assets/fonts/Cascadia/CascadiaCode.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CascadiaCode-Bold";
+    src: local("CascadiaCode-Bold"), url(./assets/fonts/Cascadia/CascadiaCode-Bold.ttf) format("truetype");
+}

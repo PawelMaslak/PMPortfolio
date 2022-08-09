@@ -1,3 +1,54 @@
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
 footer {
-    background-color: lightsalmon;
+    background-color: #42455a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    font-family: $regular;
+}
+
+.reveal{
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+fa-icon {
+  display: block;
+  transition: 1s all ease;
+}
+
+fa-icon:hover {
+  color: #00c2cb;
+  transform: translateY(-10px);
+}
+
+ol {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+      margin: auto;
+      align-items: center;
+      padding: 15px;
+
+      a {
+          text-decoration: none;
+          color: black;
+      }
+  }
 }

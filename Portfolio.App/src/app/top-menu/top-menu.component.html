@@ -1,20 +1,46 @@
-<header [ngStyle]="{'top': hidden ? '-80px' : '0px'}" (window:scroll)="onWindowScroll()">
+<header [ngStyle]="{'top': hidden ? '-85px' : '0px'}" (window:scroll)="onWindowScroll()">
     <nav class="navbar-content">
-            <div class="logo">
-                Logo Content
+        <div class="logo">
+            <span class="logo">
+                <img src="../assets/images/pm-logo.svg">
+            </span>
+        </div>
+        <div class="menu">
+            <div class="list">
+                <ol>
+                    <li>
+                        <a href="#about">
+                            <span class="menu-item">
+                                About Me
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#work">
+                            <span class="menu-item">
+                                My Work
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="menu-item">
+                                My Projects
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="menu-item">
+                                Contact Me
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="menu-item">Resume</span>
+                    </li>
+                </ol>
             </div>
-            <div class="menu">
-                <div class="list">
-                    <ol>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Experience</a></li>
-                        <li><a href="#projects">My Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ol>
-                </div>
-                <div class="resume">
-                    Resume Placeholder
-                </div>
-            </div>
+        </div>
     </nav>
 </header>

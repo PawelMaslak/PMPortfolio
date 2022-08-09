@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
     const main = document.querySelector('.main') as HTMLElement;
 
     if (!environment.animations) {
-      console.log('Animations are temporaily disabled');
       loader.style.display = 'none';
       main.style.display = 'grid';
       main.style.opacity = '1';
@@ -30,8 +29,8 @@ export class AppComponent implements OnInit {
         main.style.display = 'grid';
         setTimeout(() => {
           main.style.opacity = '1';
-        }, 50);
-      }, 5300);
+        }, 100);
+      }, 6500);
     }
   }
 }

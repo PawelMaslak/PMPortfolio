@@ -1,19 +1,22 @@
-<div id="content">
-    <main>
-        <section>
-            <app-welcome></app-welcome>
-        </section>
-        <div id="about">
-            <app-about></app-about>
-        </div>
-        <div id="work">
-            <app-work></app-work>
-        </div>
-        <div id="projects">
-            <app-projects></app-projects>
-        </div>
-        <div id="contact">
-            <app-contact></app-contact>
-        </div>
-    </main>
-  </div>
+<div id="content" (window:scroll)="reveal()">
+  <main>
+    <section>
+      <app-welcome></app-welcome>
+    </section>
+    <section id="about">
+      <div class="container reveal">
+        <app-about></app-about>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container reveal">
+        <app-projects></app-projects>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container reveal">
+        <app-contact></app-contact>
+      </div>
+    </section>
+  </main>
+</div>
