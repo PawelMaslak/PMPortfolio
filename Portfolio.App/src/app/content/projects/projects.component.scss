@@ -19,17 +19,63 @@ h3 {
 }
 
 .text-container .text-box {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     padding: 20px;
     background: #00c2cb;
-    min-width: 350px;
-    min-height: 350px;
-    max-width: 800px;
-    max-height: 650px;
+    width: 350px;
+    height: 350px;
     border-radius: 15px;
     transition: 1s all ease;
 }
 
 .text-box:hover {
     transform: translateY(-10px);
+}
+
+//Icon Section
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.icon {
+    margin: 10px;
+}
+
+fa-icon {
+    color: white;
+    transition: 1s all ease;
+}
+
+fa-icon:hover {
+    color: #DBF227;
+}
+
+//Content
+
+.project {
+    background: red;
+    height: 100%;
+    width: 100%;
+}
+
+.project .description {
+    font-family: $regular;
+    color: #2F2F30;
+    padding: 15px;
+}
+
+.project .techstack {
+    padding: 15px 15px 0 15px;
+    font-family: $regular;
+    color: #5a5a61;
+}
+
+.bottom {
+    bottom: 0;
+    right: 0;
 }
