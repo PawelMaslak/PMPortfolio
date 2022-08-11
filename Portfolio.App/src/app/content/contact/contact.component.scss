@@ -1,0 +1,89 @@
+$bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
+$regular: "CascadiaCode", Arial, Helvetica, sans-serif;
+
+span {
+    font-family: $regular;
+}
+
+.bold {
+    font-family: $bold;
+}
+
+.description {
+    min-height: 150px;
+}
+
+.console {
+    font-family: $regular;
+    width: 800px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    animation: show-console 1s ease-in;
+}
+
+@keyframes show-console {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #555;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ddd;
+}
+
+.console .consolebody {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow: hidden;
+    background-color: #000;
+    color: #63de00;
+    display: flex;
+    flex-flow: column;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 70px;
+    border: 2px solid;
+    border-color: rgb(99, 222, 0);
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+
+.button:hover {
+    border-radius: 15px;
+    background: rgba(99, 222, 0, 0.2);
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}

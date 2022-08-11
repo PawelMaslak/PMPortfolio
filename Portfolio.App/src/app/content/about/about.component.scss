@@ -13,7 +13,7 @@ img:hover {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     font-family: $bold;
@@ -75,6 +75,16 @@ span p {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: 5s all ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: translateY(-10px);
 }
 
 @media (max-width: 900px) {

@@ -2,7 +2,7 @@ $bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
 $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 
 h2 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     font-family: $bold;
@@ -35,6 +35,10 @@ h3 {
 }
 
 //Icon Section
+.github {
+    min-height: 60px;
+}
+
 .right {
     display: flex;
     justify-content: flex-end;
@@ -58,24 +62,22 @@ fa-icon:hover {
 //Content
 
 .project {
-    background: red;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
-.project .description {
+.description {
     font-family: $regular;
     color: #2F2F30;
-    padding: 15px;
+    flex: 1 1;
 }
 
 .project .techstack {
-    padding: 15px 15px 0 15px;
-    font-family: $regular;
+    font-family: $bold;
     color: #5a5a61;
-}
-
-.bottom {
-    bottom: 0;
-    right: 0;
+    opacity: .8;
+    height: 35px;
+    margin-bottom: 5px;
 }
