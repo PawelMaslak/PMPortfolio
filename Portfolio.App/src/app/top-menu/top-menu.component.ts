@@ -8,15 +8,4 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./top-menu.component.scss']
 })
 export class TopMenuComponent {
-
-  previousWindowPosition = 0;
-
-  hidden = false;
-
-  onWindowScroll() {
-    //this.hidden = true;
-    var currentPageOffset = window.pageYOffset;
-    this.previousWindowPosition > currentPageOffset ? this.hidden = false : this.hidden = true;
-    this.previousWindowPosition = currentPageOffset;
-  }
 }

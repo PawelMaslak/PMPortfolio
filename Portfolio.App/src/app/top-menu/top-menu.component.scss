@@ -1,83 +1,21 @@
-$navheight: 85px;
-$menu-item-color: white;
-$menu-item-color-focus: #DBF227;
-$font-mono: "SF Mono",
-"Fira Code",
-"Fira Mono",
-"Roboto Mono",
-monospace;
-
-.logo {
-    width: 80px;
-    height: 80px;
-}
-
-.menu {
-    text-align: center;
-}
-
-.menu-item {
-    display: block;
-    font-family: $font-mono;
-    color: $menu-item-color;
-    transition: 1s all ease;
-}
-
-.menu-item:hover {
-    color: $menu-item-color-focus;
-    transform: translateY(-5px);
-}
-
-@keyframes show-menu {
-    0% {
-        opacity: 0;
-        transform: translateY(-85px);
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
     }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
+    .default-menu {
+        display: none;
     }
 }
 
-header {
-    display: flex;
-    height: $navheight;
-    background-color: #2F2F30;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    transition: top 1s;
-    z-index: 1;
-    animation: show-menu 1s ease-in;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 
-    nav {
-        display: inherit;
-        width: 100%;
-        justify-content: space-between;
-        padding: 0 50px;
-
-        div {
-            display: flex;
-
-            ol {
-                justify-content: space-between;
-                display: flex;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    margin: auto;
-                    align-items: center;
-                    padding: 15px;
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
+    .default-menu {
+        display: block;
     }
 }

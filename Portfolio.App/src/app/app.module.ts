@@ -17,6 +17,8 @@ import {
   faLinkedin,
   faInstagram
 } from '@fortawesome/free-brands-svg-icons';
+import { MobileMenuComponent } from './top-menu/mobile-menu/mobile-menu.component';
+import { DefaultMenuComponent } from './top-menu/default-menu/default-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {
     ContactComponent,
     FooterComponent,
     WelcomeComponent,
-    LoadingComponent
+    LoadingComponent,
+    MobileMenuComponent,
+    DefaultMenuComponent
   ],
   imports: [
     BrowserModule,

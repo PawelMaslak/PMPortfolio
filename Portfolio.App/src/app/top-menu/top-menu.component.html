@@ -1,39 +1,6 @@
-<header [ngStyle]="{'top': hidden ? '-85px' : '0px'}" (window:scroll)="onWindowScroll()">
-    <nav class="navbar-content">
-        <div class="logo">
-            <span class="logo">
-                <img src="../assets/images/pm-logo.svg">
-            </span>
-        </div>
-        <div class="menu">
-            <div class="list">
-                <ol>
-                    <li>
-                        <a href="#about">
-                            <span class="menu-item">
-                                About Me
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects">
-                            <span class="menu-item">
-                                My Projects
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <span class="menu-item">
-                                Contact Me
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <span class="menu-item">Resume</span>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </nav>
-</header>
+<div class="default-menu">
+    <app-default-menu></app-default-menu>
+</div>
+<div class="mobile-menu">
+    <app-mobile-menu></app-mobile-menu>
+</div>
