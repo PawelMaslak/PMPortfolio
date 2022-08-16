@@ -17,6 +17,12 @@ import {
   faLinkedin,
   faInstagram
 } from '@fortawesome/free-brands-svg-icons';
+
+import {
+  faClose,
+  faBars
+} from '@fortawesome/free-solid-svg-icons';
+
 import { MobileMenuComponent } from './top-menu/mobile-menu/mobile-menu.component';
 import { DefaultMenuComponent } from './top-menu/default-menu/default-menu.component';
 
@@ -46,7 +52,9 @@ export class AppModule {
     library.addIcons(
       faGithub,
       faLinkedin,
-      faInstagram
+      faInstagram,
+      faClose,
+      faBars
     );
   }
 }

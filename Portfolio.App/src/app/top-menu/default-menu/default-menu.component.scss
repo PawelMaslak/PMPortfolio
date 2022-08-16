@@ -1,11 +1,7 @@
 $navheight: 85px;
 $menu-item-color: white;
-$menu-item-color-focus: #DBF227;
-$font-mono: "SF Mono",
-"Fira Code",
-"Fira Mono",
-"Roboto Mono",
-monospace;
+$menu-item-color-focus: #dbf227;
+$font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
 .logo {
     width: 80px;
@@ -20,7 +16,7 @@ monospace;
     display: block;
     font-family: $font-mono;
     color: $menu-item-color;
-    transition: 1s all ease;
+    transition: 1s all ease-out;
 }
 
 .menu-item:hover {
@@ -43,7 +39,7 @@ monospace;
 header {
     display: flex;
     height: $navheight;
-    background-color: #2F2F30;
+    background-color: #2f2f30;
     align-items: center;
     position: fixed;
     width: 100%;

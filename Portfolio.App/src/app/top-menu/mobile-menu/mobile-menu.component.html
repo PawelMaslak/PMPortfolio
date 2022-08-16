@@ -1,19 +1,35 @@
 <div class="menu">
     <div class="logo">
-        <p>Logo Placeholder</p>
-    </div>
-    <div class="bars">
-        <span>
-            <a href="https://github.com/PawelMaslak" target=”_blank”>
-                <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
-            </a>
+        <span class="logo">
+            <img src="../assets/images/pm-logo.svg">
         </span>
     </div>
-    <div id="links">
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+    <div id="bars" (click)="open()">
+        <div id="open">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="close">
+            <div class="xbar"></div>
+            <div class="xbar"></div>
+        </div>
     </div>
+</div>
+<div id="links">
+    <a href="#about">
+        <span class="menu-item">
+            About Me
+        </span>
+    </a>
+    <a href="#projects">
+        <span class="menu-item">
+            My Projects
+        </span>
+    </a>
+    <a href="#contact">
+        <span class="menu-item">
+            Contact Me
+        </span>
+    </a>
 </div>

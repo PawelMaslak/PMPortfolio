@@ -12,4 +12,18 @@ export class MobileMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  open() {
+    let links = document.getElementById("links");
+    let bars = document.getElementById("bars");
+    let close = document.getElementById("close");
+
+    if (links!.style.opacity === "1") {
+      links!.style.opacity = "0";
+      links!.style.height = "0px";
+    }
+    else {
+      links!.style.opacity = "1";
+      links!.style.height = "100%";
+    }
+  }
 }

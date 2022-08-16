@@ -1,3 +1,75 @@
-.menu #links {
+$font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+#links {
+    opacity: 0;
+    height: 0px;
+    transition: all 0.4s linear;
+}
+
+#bars, #close {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all 0.4s linear;
+}
+
+.bar {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+.xbar {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+#close {
     display: none;
+}
+
+#links a {
+    color: white;
+    background-color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+#links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu-item {
+    font-family: $font-mono;
 }
