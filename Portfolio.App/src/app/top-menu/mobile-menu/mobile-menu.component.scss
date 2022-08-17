@@ -26,13 +26,24 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     transition: all 0.4s linear;
 }
 
-#bars, #close {
+#button {
     display: flex;
+    justify-content: space-around;
+    transition: all .4s linear;
+}
+
+.active {
+    background-color: black;
+}
+
+#bars {
+    display: flex;
+    //display: none;
     flex-direction: column;
     justify-content: space-between;
-    height: 40px;
     margin-top: auto;
     margin-bottom: auto;
+    width: 70px;
     margin-right: 10px;
     margin-left: 10px;
     transition: all 0.4s linear;
@@ -42,7 +53,7 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     width: 50px;
     height: 5px;
     background-color: white;
-    margin: 5px;
+    margin: 7px;
 }
 
 .xbar {
@@ -50,10 +61,6 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     height: 5px;
     background-color: white;
     margin: 5px;
-}
-
-#close {
-    display: none;
 }
 
 #links a {
@@ -72,4 +79,29 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
 .menu-item {
     font-family: $font-mono;
+}
+
+#close {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+#close:after {
+    content: '';
+    height: 40px;
+    border-left: 5px solid white;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+}
+
+#close:before {
+    content: '';
+    height: 40px;
+    border-left: 5px solid white;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
 }
