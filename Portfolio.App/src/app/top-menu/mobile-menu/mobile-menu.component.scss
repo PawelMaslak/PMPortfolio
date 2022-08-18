@@ -24,6 +24,8 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     opacity: 0;
     height: 0px;
     transition: all 0.4s linear;
+    position: absolute;
+    width: 100%;
 }
 
 #button {
@@ -34,33 +36,6 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
 .active {
     background-color: black;
-}
-
-#bars {
-    display: flex;
-    //display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 70px;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: all 0.4s linear;
-}
-
-.bar {
-    width: 50px;
-    height: 5px;
-    background-color: white;
-    margin: 7px;
-}
-
-.xbar {
-    width: 50px;
-    height: 5px;
-    background-color: white;
-    margin: 5px;
 }
 
 #links a {
@@ -81,27 +56,38 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-family: $font-mono;
 }
 
-#close {
-    width: 70px;
-    height: 70px;
+.bars {
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hamburger .line{
+    width: 40px; 
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+
+  
+  #hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    transform: translateY(12px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .container {
     position: relative;
-    transition: all 0.4s linear;
-}
-
-#close:after {
-    content: '';
-    height: 40px;
-    border-left: 5px solid white;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 28px;
-}
-
-#close:before {
-    content: '';
-    height: 40px;
-    border-left: 5px solid white;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 28px;
-}
+  }

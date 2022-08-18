@@ -1,37 +1,33 @@
-<div class="menu">
-    <div class="logo">
-        <span class="logo">
-            <img src="../assets/images/pm-logo.svg">
-        </span>
-    </div>
-    <div id="button" (click)="open()">
-        <div id="bars">
-            <div id="open">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+<div class="container">
+    <div class="menu">
+        <div class="logo">
+            <span class="logo">
+                <img src="../assets/images/pm-logo.svg">
+            </span>
+        </div>
+        <div class="bars">
+            <div class="hamburger" id="hamburger-1" (click)="clickMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </div>
-        <div class="close-bars">
-            <div id="close"></div>
-        </div>
+    </div>
+    <div id="links">
+        <a href="#about">
+            <span class="menu-item">
+                About Me
+            </span>
+        </a>
+        <a href="#projects">
+            <span class="menu-item">
+                My Projects
+            </span>
+        </a>
+        <a href="#contact">
+            <span class="menu-item">
+                Contact Me
+            </span>
+        </a>
     </div>
 </div>
-<div id="links">
-    <a href="#about">
-        <span class="menu-item">
-            About Me
-        </span>
-    </a>
-    <a href="#projects">
-        <span class="menu-item">
-            My Projects
-        </span>
-    </a>
-    <a href="#contact">
-        <span class="menu-item">
-            Contact Me
-        </span>
-    </a>
-</div>
-
