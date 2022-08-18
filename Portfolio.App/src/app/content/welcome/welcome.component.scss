@@ -1,18 +1,84 @@
-$greeting-colour: gold;
 $bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
 $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 $goonies: "Goonies", Arial, Helvetica, sans-serif;
+
+//General settings
+
+.console {
+    font-family: $regular;
+    box-sizing: border-box;
+    margin: auto;
+    animation: show-console 1s ease-in;
+}
+
+.console header {
+    background-color: #555;
+    line-height: 30px;
+    text-align: center;
+    color: #DDD;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+//Screen specific settings
+
+@media (max-width: 768px) {
+    .console {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    header {
+        max-height: 12vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .console {
+        min-width: 40vw;
+        height: 60vh;
+    }
+
+    header {
+        min-height: 5vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .console {
+        max-width: 60vw;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .console {
+        max-width: 60vw;
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    .console {
+        min-width: 50vw;
+        max-width: 60vw;
+        height: 60vh;
+    }
+}
+
+//Console general size is done.
 
 span {
     font-family: $regular;
 }
 
 .new-lines {
-    span:not(.bold)  {
+    span:not(.bold) {
         display: list-item;
         word-break: break-word;
         list-style: none;
     }
+
     padding-top: 1vh;
 }
 
@@ -56,17 +122,8 @@ span {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-  
-  .console {
-    font-family: $regular;
-    width: 800px;
-    height: 450px;
-    box-sizing: border-box;
-    margin: auto;
-    animation: show-console 1s ease-in;
-  }
 
-  @keyframes show-console {
+@keyframes show-console {
     0% {
         opacity: 0;
         transform: translateY(100px);
@@ -77,28 +134,19 @@ span {
         transform: translateY(0px);
     }
 }
-  
-  .console header {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: #555;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    color: #DDD;
-  }
-  
-  .console .consolebody {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+
+.console .consolebody {
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    
     box-sizing: border-box;
     padding: 20px;
     height: calc(100% - 40px);
     overflow: hidden;
     background-color: #000;
     color: #63de00;
-  }
-  
-  .console .consolebody p {
+}
+
+.console .consolebody p {
     line-height: 1.5rem;
-  }
+}

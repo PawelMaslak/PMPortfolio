@@ -1,18 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu',
   templateUrl: './mobile-menu.component.html',
   styleUrls: ['./mobile-menu.component.scss']
 })
-export class MobileMenuComponent implements OnInit {
+export class MobileMenuComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  clickMenu() {
+  toggleMenu() {
     let hamburger = document.getElementById("hamburger-1");
     let links = document.getElementById("links");
     hamburger?.classList.toggle("is-active");
@@ -27,5 +24,11 @@ export class MobileMenuComponent implements OnInit {
     }
   }
 
-  //Add method to close menu on clicking link.
+  clickMenu() {
+    let links = document.getElementById("links");
+    let hamburger = document.getElementById("hamburger-1");
+    links!.style.opacity = "0";
+    links!.style.height = "0px";
+    hamburger?.classList.toggle("is-active");
+  }
 }

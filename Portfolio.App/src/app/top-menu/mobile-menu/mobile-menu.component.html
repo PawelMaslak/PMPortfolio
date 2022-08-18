@@ -6,7 +6,7 @@
             </span>
         </div>
         <div class="bars">
-            <div class="hamburger" id="hamburger-1" (click)="clickMenu()">
+            <div class="hamburger" id="hamburger-1" (click)="toggleMenu()">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -14,17 +14,17 @@
         </div>
     </div>
     <div id="links">
-        <a href="#about">
+        <a href="#about" (click)="clickMenu()">
             <span class="menu-item">
                 About Me
             </span>
         </a>
-        <a href="#projects">
+        <a href="#projects" (click)="clickMenu()">
             <span class="menu-item">
                 My Projects
             </span>
         </a>
-        <a href="#contact">
+        <a href="#contact" (click)="clickMenu()">
             <span class="menu-item">
                 Contact Me
             </span>
