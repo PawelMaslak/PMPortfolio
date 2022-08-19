@@ -16,11 +16,11 @@ export class MobileMenuComponent {
 
     if (links!.style.opacity === "1") {
       links!.style.opacity = "0";
-      links!.style.height = "0px";
+      links!.style.zIndex = "-1"
     }
     else {
       links!.style.opacity = "1";
-      links!.style.height = "100%";
+      links!.style.zIndex = "1"
     }
   }
 
@@ -28,7 +28,7 @@ export class MobileMenuComponent {
     let links = document.getElementById("links");
     let hamburger = document.getElementById("hamburger-1");
     links!.style.opacity = "0";
-    links!.style.height = "0px";
+    links!.style.zIndex = "-1"
     hamburger?.classList.toggle("is-active");
   }
 }

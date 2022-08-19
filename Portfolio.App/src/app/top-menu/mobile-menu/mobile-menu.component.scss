@@ -22,16 +22,10 @@ $font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
 #links {
     opacity: 0;
-    height: 0px;
     transition: all 0.4s linear;
     position: absolute;
     width: 100%;
-}
-
-#button {
-    display: flex;
-    justify-content: space-around;
-    transition: all .4s linear;
+    z-index: -1;
 }
 
 .active {
