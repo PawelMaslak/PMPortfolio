@@ -17,7 +17,7 @@ header {
     flex-direction: column;
     background-color: #555;
     text-align: center;
-    color: #DDD;
+    color: #ddd;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
 }
@@ -111,7 +111,7 @@ span {
 
     .new-lines span,
     .greeting {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     .presentation {
@@ -121,12 +121,24 @@ span {
     }
 }
 
-@media (min-width: 768px) {
-    .console {
-        min-width: 40vw;
-        height: 60vh;
-    }
+//Needed Code
 
+.welcome {
+    display: flex;
+    width: 100%;
+}
+
+.desc {
+    background-color: red;
+}
+
+.photo {
+    background-color: blue;
+    z-index: -1;
+}
+
+//Sizes
+@media (max-width: 768px) {
     header {
         min-height: 5vh;
     }
@@ -137,51 +149,101 @@ span {
 
     .new-lines span,
     .greeting {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     .presentation {
         height: 10vh;
         padding-bottom: 1vh;
         padding-top: 1vh;
+    }
+
+    .welcome {
+        flex-direction: column-reverse;
+    }
+
+    .desc {
+        width: 80vw;
+        height: 80vw;
+        margin-left: 5vh;
+    }
+
+    .photo {
+        width: 80vw;
+        height: 50vw;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        min-height: 5vh;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .new-lines span,
+    .greeting {
+        font-size: 0.9rem;
+    }
+
+    .presentation {
+        height: 10vh;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+    }
+
+    .desc {
+        width: 50vw;
+        height: 30vw;
+        margin-top: 5vw;
+    }
+
+    .photo {
+        width: 40vw;
+        height: 40vw;
+        margin-left: -15vw;
     }
 }
 
 @media (min-width: 992px) {
-    .console {
-        min-width: 40vw;
-        height: 60vh;
-    }
-
     .name {
         font-size: 3rem;
     }
 
     .new-lines span,
     .greeting {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     .presentation {
         height: 10vh;
         padding-bottom: 1vh;
         padding-top: 1vh;
+    }
+
+    .desc {
+        width: 50vw;
+        height: 30vw;
+        margin-top: 5vw;
+    }
+
+    .photo {
+        width: 40vw;
+        height: 40vw;
+        margin-left: -15vw;
     }
 }
 
 @media (min-width: 1200px) {
-    .console {
-        max-width: 60vw;
-        height: 60vh;
-    }
-
     .name {
         font-size: 3rem;
     }
 
     .new-lines span,
     .greeting {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     .presentation {
@@ -189,18 +251,21 @@ span {
         padding-bottom: 1vh;
         padding-top: 1vh;
     }
+
+    .desc {
+        width: 50vw;
+        height: 30vw;
+        margin-top: 5vw;
+    }
+
+    .photo {
+        width: 40vw;
+        height: 40vw;
+        margin-left: -15vw;
+    }
 }
 
 @media (min-width: 1400px) {
-    .console {
-        min-width: 40vw;
-        height: 60vh;
-    }
-
-    header {
-        min-height: 4vh;
-    }
-
     .name {
         font-size: 4rem;
     }
@@ -215,26 +280,16 @@ span {
         padding-bottom: 1vh;
         padding-top: 1vh;
     }
-}
 
+    .desc {
+        width: 50vw;
+        height: 30vw;
+        margin-top: 5vw;
+    }
 
-.welcome {
-    display: flex;
-    width: 100%;
-}
-
-
-.desc {
-    width: 1000px;
-    height: 500px;
-    margin-top: 150px;
-    background-color: red;
-}
-
-.photo {
-    width: 800px;
-    height: 800px;
-    margin-left: -300px;
-    background-color: blue;
-    z-index: -1;
+    .photo {
+        width: 40vw;
+        height: 40vw;
+        margin-left: -15vw;
+    }
 }
