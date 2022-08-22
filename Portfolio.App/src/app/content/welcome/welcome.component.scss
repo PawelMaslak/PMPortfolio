@@ -109,7 +109,8 @@ span {
         font-size: 2rem;
     }
 
-    .new-lines span, .greeting {
+    .new-lines span,
+    .greeting {
         font-size: .9rem;
     }
 
@@ -134,7 +135,8 @@ span {
         font-size: 3rem;
     }
 
-    .new-lines span, .greeting {
+    .new-lines span,
+    .greeting {
         font-size: .9rem;
     }
 
@@ -155,7 +157,8 @@ span {
         font-size: 3rem;
     }
 
-    .new-lines span, .greeting {
+    .new-lines span,
+    .greeting {
         font-size: .9rem;
     }
 
@@ -176,7 +179,8 @@ span {
         font-size: 3rem;
     }
 
-    .new-lines span, .greeting {
+    .new-lines span,
+    .greeting {
         font-size: .9rem;
     }
 
@@ -201,7 +205,8 @@ span {
         font-size: 4rem;
     }
 
-    .new-lines span, .greeting {
+    .new-lines span,
+    .greeting {
         font-size: 1.1rem;
     }
 
@@ -210,4 +215,26 @@ span {
         padding-bottom: 1vh;
         padding-top: 1vh;
     }
+}
+
+
+.welcome {
+    display: flex;
+    width: 100%;
+}
+
+
+.desc {
+    width: 1000px;
+    height: 500px;
+    margin-top: 150px;
+    background-color: red;
+}
+
+.photo {
+    width: 800px;
+    height: 800px;
+    margin-left: -300px;
+    background-color: blue;
+    z-index: -1;
 }
