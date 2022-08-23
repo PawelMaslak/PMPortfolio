@@ -11,8 +11,26 @@ $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
     font-family: $bold;
 }
 
-.col {
-    min-width: 10vw;
+.text-container .text-box h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px;
+    font-family: $bold;
+}
+
+span p {
+    padding: 1vh;
+    font-size: 0.8vw;
+    font-family: $regular;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    font-family: $bold;
+    font-size: 0.8vw;
 }
 
 @keyframes show-console {
@@ -28,157 +46,208 @@ $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 }
 
 .desc {
-    background-color: #e0ffff;;
+    background-color: #e0ffff;
 }
 
 .photo {
-    background-color: blue;
     z-index: -1;
 }
 
+.text-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 //Sizes
-@media (max-width: 768px) {
-    header {
-        min-height: 5vh;
-    }
-
-    .name {
-        font-size: 3rem;
-    }
-
-    .new-lines span,
-    .greeting {
-        font-size: 0.9rem;
-    }
-
-    .presentation {
-        height: 10vh;
-        padding-bottom: 1vh;
-        padding-top: 1vh;
-    }
-
+@media (max-width: 640px) {
     .welcome {
         flex-direction: column-reverse;
     }
 
     .desc {
         width: 80vw;
-        height: 40vh;
+        height: 80vh;
         margin-left: 5vh;
-        margin-top: -15vw;
+        margin-top: -10vh;
     }
 
     .photo {
-        width: 80vw;
-        height: 30vh;
+        width: 70vw;
+        height: 60vh;
+    }
+
+    img {
+        width: 70vw;
+        height: 60vh;
+        display: block;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 3vh;
+        margin: 0px;
+    }
+
+    span p {
+        font-size: 2vh;
+    }
+
+    li {
+        font-size: 2vh;
     }
 }
 
-@media (min-width: 768px) {
-    header {
-        min-height: 5vh;
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column-reverse;
     }
 
-    .name {
-        font-size: 3rem;
+    .desc {
+        width: 80vw;
+        height: 70vh;
+        margin-left: 5vh;
+        margin-top: -10vh;
     }
 
-    .new-lines span,
-    .greeting {
-        font-size: 0.9rem;
+    .photo {
+        width: 70vw;
+        height: 60vh;
     }
 
-    .presentation {
-        height: 10vh;
-        padding-bottom: 1vh;
-        padding-top: 1vh;
+    img {
+        width: 70vw;
+        height: 60vh;
+        display: block;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 3vh;
+        margin: 0px;
+    }
+
+    span p {
+        font-size: 2vh;
+    }
+
+    li {
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 769px) {
+    .welcome {
+        margin-top: 10vh;
     }
 
     .desc {
         width: 50vw;
-        height: 30vw;
-        margin-top: 5vw;
+        height: 55vw;
+        margin-top: -7.5vw;
     }
 
     .photo {
-        width: 40vw;
+        width: 50vw;
+        height: 45vw;
+        margin-left: -10vw;
+    }
+
+    img {
+        width: 50vw;
         height: 40vw;
-        margin-left: -15vw;
+        display: block;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 2vw;
+        margin: 5px;
+    }
+
+    span p {
+        font-size: 1.5vh;
+    }
+
+    li {
+        font-size: 1.5vh;
     }
 }
 
 @media (min-width: 992px) {
-    .name {
-        font-size: 3rem;
-    }
-
-    .new-lines span,
-    .greeting {
-        font-size: 0.9rem;
-    }
-
-    .presentation {
-        height: 10vh;
-        padding-bottom: 1vh;
-        padding-top: 1vh;
+    .welcome {
+        margin-top: 0px;
     }
 
     .desc {
         width: 50vw;
-        height: 30vw;
+        height: 40vw;
         margin-top: 5vw;
     }
 
     .photo {
-        width: 40vw;
+        width: 50vw;
         height: 40vw;
-        margin-left: -15vw;
+        margin-left: -10vw;
+    }
+
+    img {
+        width: 50vw;
+        height: 40vw;
+        display: block;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 2vw;
+        margin: 5px;
+    }
+
+    span p {
+        font-size: 1.1vw;
+    }
+
+    li {
+        font-size: 1.1vw;
     }
 }
 
 @media (min-width: 1200px) {
-    .name {
-        font-size: 3rem;
-    }
-
-    .new-lines span,
-    .greeting {
-        font-size: 0.9rem;
-    }
-
-    .presentation {
-        height: 10vh;
-        padding-bottom: 1vh;
-        padding-top: 1vh;
+    .welcome {
+        margin-top: 0px;
     }
 
     .desc {
         width: 50vw;
-        height: 30vw;
+        height: 40vw;
         margin-top: 5vw;
     }
 
     .photo {
-        width: 40vw;
+        width: 50vw;
         height: 40vw;
-        margin-left: -15vw;
+        margin-left: -10vw;
+    }
+
+    img {
+        width: 50vw;
+        height: 40vw;
+        display: block;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 2vw;
+        margin: 5px;
+    }
+
+    span p {
+        font-size: 1.1vw;
+    }
+
+    li {
+        font-size: 1.1vw;
     }
 }
 
 @media (min-width: 1400px) {
-    .name {
-        font-size: 4rem;
-    }
-
-    .new-lines span,
-    .greeting {
-        font-size: 1.1rem;
-    }
-
-    .presentation {
-        height: 10vh;
-        padding-bottom: 1vh;
-        padding-top: 1vh;
+    .welcome {
+        margin-top: 0px;
     }
 
     .desc {
@@ -192,44 +261,32 @@ $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
         height: 30vw;
         margin-left: -10vw;
     }
+
+    img {
+        width: 40vw;
+        height: 30vw;
+        display: block;
+    }
+
+    span p {
+        font-size: 0.8vw;
+    }
+
+    li {
+        font-size: 0.8vw;
+    }
+
+    .text-container .text-box h3 {
+        font-size: 1.5vw;
+        margin: 1.2vw;
+    }
+
+    .col {
+        min-width: 10vw;
+    }
 }
 
 //About styling
-
-img {
-    width: 100%;
-    height: 30vw;
-    display: block;
-}
-
-
-h2 {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $bold;
-}
-
-h3 {
-    font-family: $bold;
-}
-
-ul {
-    list-style-type: square;
-}
-
-li {
-    font-family: $bold;
-}
-
-span p {
-    padding: 10px;
-    font-family: $regular;
-}
-
-.text-container {
-    display: flex;
-}
 
 .container {
     display: flex;
@@ -238,31 +295,9 @@ span p {
 
 .text-container .text-box {
     color: #2f2f30;
-    margin: 20px;
-    padding: 20px;
-    min-width: 500px;
-    max-width: 800px;
-    max-height: 650px;
-    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
     z-index: 1;
-}
-
-.text-container .text-box h3 {
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 900px) {
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .text-container {
-        flex-direction: column;
-    }
 }
 
 a {
@@ -270,10 +305,10 @@ a {
     color: #2f2f30;
     font-weight: 700;
     position: relative;
-  }
-  
-  a::before {
-    content: '';
+}
+
+a::before {
+    content: "";
     background-color: #dbf227;
     position: absolute;
     left: 0;
@@ -281,10 +316,10 @@ a {
     width: 100%;
     height: 2px;
     z-index: -1;
-    transition: all .3s ease-in-out;
-  }
-  
-  a:hover::before {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
     bottom: 0;
     height: 100%;
-  }
+}
