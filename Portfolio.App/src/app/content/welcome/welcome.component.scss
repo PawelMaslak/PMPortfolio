@@ -59,20 +59,53 @@ li {
     height: 100%;
 }
 
-//Sizes
-@media (max-width: 640px) {
+@media (max-width: 576px) {
     .welcome {
+        display: none;
+    }
+
+    .welcome-mobile {
+        display: block;
+    }
+
+    .photo {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .welcome {
+        display: none;
+    }
+
+    .welcome-mobile {
+        display: block;
+    }
+
+    .photo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .welcome {
+        display: flex;
         flex-direction: column-reverse;
+    }
+
+    .welcome-mobile {
+        display: none;
     }
 
     .desc {
         width: 80vw;
-        height: 80vh;
+        height: 55vh;
         margin-left: 5vh;
-        margin-top: -10vh;
+        margin-top: -20vh;
     }
 
     .photo {
+        display: block;
         width: 70vw;
         height: 60vh;
     }
@@ -94,86 +127,17 @@ li {
 
     li {
         font-size: 2vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .welcome {
-        flex-direction: column-reverse;
-    }
-
-    .desc {
-        width: 80vw;
-        height: 70vh;
-        margin-left: 5vh;
-        margin-top: -10vh;
-    }
-
-    .photo {
-        width: 70vw;
-        height: 60vh;
-    }
-
-    img {
-        width: 70vw;
-        height: 60vh;
-        display: block;
-    }
-
-    .text-container .text-box h3 {
-        font-size: 3vh;
-        margin: 0px;
-    }
-
-    span p {
-        font-size: 2vh;
-    }
-
-    li {
-        font-size: 2vh;
-    }
-}
-
-@media (min-width: 769px) {
-    .welcome {
-        margin-top: 10vh;
-    }
-
-    .desc {
-        width: 50vw;
-        height: 55vw;
-        margin-top: -7.5vw;
-    }
-
-    .photo {
-        width: 50vw;
-        height: 45vw;
-        margin-left: -10vw;
-    }
-
-    img {
-        width: 50vw;
-        height: 40vw;
-        display: block;
-    }
-
-    .text-container .text-box h3 {
-        font-size: 2vw;
-        margin: 5px;
-    }
-
-    span p {
-        font-size: 1.5vh;
-    }
-
-    li {
-        font-size: 1.5vh;
     }
 }
 
 @media (min-width: 992px) {
     .welcome {
         margin-top: 0px;
+        flex-direction: row;
+    }
+
+    .welcome-mobile {
+        display: none;
     }
 
     .desc {
@@ -211,6 +175,11 @@ li {
 @media (min-width: 1200px) {
     .welcome {
         margin-top: 0px;
+        flex-direction: row;
+    }
+
+    .welcome-mobile {
+        display: none;
     }
 
     .desc {
@@ -248,6 +217,11 @@ li {
 @media (min-width: 1400px) {
     .welcome {
         margin-top: 0px;
+        flex-direction: row;
+    }
+
+    .welcome-mobile {
+        display: none;
     }
 
     .desc {

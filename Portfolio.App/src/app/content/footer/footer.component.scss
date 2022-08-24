@@ -1,31 +1,31 @@
 $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 
 footer {
-    background-color: #e0ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 120px;
-    font-family: $regular;
+  background-color: #e0ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3vh;
+  font-family: $regular;
+}
+
+.signature {
+  font-size: 1.3vh;
 }
 
 span {
   color: #42455a;
 }
 
-.reveal{
+.reveal {
   position: relative;
   opacity: 0;
   transition: 1s all ease;
+  padding-top: 5px;
 }
 
-.reveal.active{
+.reveal.active {
   opacity: 1;
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
 }
 
 fa-icon {
@@ -47,13 +47,13 @@ ol {
   padding: 0;
 
   li {
-      margin: auto;
-      align-items: center;
-      padding: 15px;
+    margin: auto;
+    align-items: center;
+    padding: 15px;
 
-      a {
-          text-decoration: none;
-          color: black;
-      }
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 }

@@ -26,12 +26,6 @@ section{
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  section{
-    min-height: 150vh;
-  }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 *{
   margin: 0;
