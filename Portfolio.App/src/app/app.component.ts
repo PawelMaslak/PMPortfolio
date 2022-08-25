@@ -25,12 +25,27 @@ export class AppComponent implements OnInit {
       setTimeout(() => {
         loader.style.opacity = '0';
         loader.style.display = 'none';
-  
+
         main.style.display = 'grid';
         setTimeout(() => {
           main.style.opacity = '1';
         }, 100);
       }, 6500);
     }
+  }
+
+  checkMobileMenu(event: any) {
+    var target = event.target || event.srcElement || event.currentTarget;
+
+    let links = document.getElementById('links');
+    let hamburger = document.getElementById('hamburger-1');
+
+    if (links?.contains(target) || hamburger?.contains(target)) return;
+
+    if (!hamburger?.classList.contains("is-active")) return;
+    
+    hamburger.classList.remove("is-active");
+    links!.style.opacity = "0";
+    links!.style.zIndex = "-1"
   }
 }

@@ -1,9 +1,11 @@
 <div id="content" (window:scroll)="reveal()">
   <main>
-    <section id="about"> 
-      <app-welcome></app-welcome>
+    <section id="about">
+      <div class="container reveal">
+        <app-welcome></app-welcome>
+      </div>
     </section>
-    <!-- <section id="projects">
+    <section id="projects">
       <div class="container reveal">
         <app-projects></app-projects>
       </div>
@@ -12,6 +14,6 @@
       <div class="container reveal">
         <app-contact></app-contact>
       </div>
-    </section> -->
+    </section>
   </main>
 </div>

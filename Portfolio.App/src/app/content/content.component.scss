@@ -1,24 +1,3 @@
-// #about,#work,#projects,#contact,#welcome{
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
-//     //width: 100%;
-//     //max-width: 1000px;
-//     margin: auto;
-//     justify-content: center; 
-// }
-
-// section {
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
-//     width: 100%;
-//     background: white;
-//     max-width: 1000px;
-//     margin: auto;
-//     justify-content: center; 
-// }
-
 section{
   min-height: 100vh;
   display: flex;
@@ -26,67 +5,13 @@ section{
   align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Asap", sans-serif;
-}
-
-body{
-  background: #42455a;
-}
-
-section:nth-child(1){
-  color: #e0ffff;
-  }
-section:nth-child(2){
+section {
   color: #42455a;
-  background: #e0ffff;
-} 
-section:nth-child(3){
-  color: #e0ffff;
-}
-section:nth-child(4){
-  color: #42455a;
-  background: #e0ffff;
-}
-section .container{
-  margin: 100px;
-}
-section h1{
-  font-size: 3rem;
-  margin: 20px;
-}
-section h2{
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
-section .text-container{
-   display: flex;
-}
-section .text-container .text-box{
-  margin: 20px;
-  padding: 20px;
-  background: #00c2cb;
-}
-section .text-container .text-box h3{
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
-@media (max-width: 900px){
-  section h1{
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container{
-    flex-direction: column;
-  }
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .reveal{
