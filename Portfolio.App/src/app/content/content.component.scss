@@ -19,6 +19,13 @@
 //     justify-content: center; 
 // }
 
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 *{
   margin: 0;
@@ -30,12 +37,7 @@
 body{
   background: #42455a;
 }
-section{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 section:nth-child(1){
   color: #e0ffff;
   }
