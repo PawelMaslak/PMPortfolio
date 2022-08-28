@@ -1,13 +1,6 @@
 $bold: "CascadiaCode-Bold", Arial, Helvetica, sans-serif;
 $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 
-h2 {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $bold;
-}
-
 h3 {
     text-align: center;
     text-transform: uppercase;
@@ -16,17 +9,13 @@ h3 {
 
 .text-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .text-container .text-box {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
     background: #00c2cb;
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
     transition: 1s all ease;
 }
 
@@ -34,7 +23,6 @@ h3 {
     transform: translateY(-10px);
 }
 
-//Icon Section
 .github {
     min-height: 60px;
 }
@@ -76,6 +64,80 @@ fa-icon:hover {
     font-family: $bold;
     color: #5a5a61;
     opacity: .8;
+}
+
+.text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.project .techstack {
     height: 35px;
     margin-bottom: 5px;
+}
+
+@media (max-width: 1400px) {
+    .text-container .text-box {
+        margin: 10px;
+        padding: 20px;
+        width: 320px;
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .techstack {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container .text-box {
+        margin: 10px;
+        padding: 10px;
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container .text-box {
+        margin: 10px;
+        padding: 10px;
+        width: 50vw;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container .text-box {
+        margin: 10px;
+        padding: 10px;
+        width: 65vw;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-container .text-box {
+        margin: 10px;
+        padding: 10px;
+        width: 90vw;
+        border-radius: 15px;
+    }
+
+    .techstack {
+        margin-top: 10px;
+    }
 }

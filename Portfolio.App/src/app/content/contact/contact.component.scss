@@ -5,22 +5,16 @@ span {
     font-family: $regular;
 }
 
+.header {
+    font-family: $bold;
+    text-transform: uppercase;
+}
+
 .bold {
     font-family: $bold;
 }
 
-.description {
-    min-height: 150px;
-}
 
-.console {
-    font-family: $regular;
-    width: 800px;
-    height: 450px;
-    box-sizing: border-box;
-    margin: auto;
-    animation: show-console 1s ease-in;
-}
 
 @keyframes show-console {
     0% {
@@ -57,18 +51,12 @@ span {
     flex-flow: column;
 }
 
-.hello {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    height: 70px;
+    height: 100%;
+    width: 100%;
     border: 2px solid;
     border-color: rgb(99, 222, 0);
     border-radius: 5px;
@@ -80,10 +68,53 @@ span {
     background: rgba(99, 222, 0, 0.2);
 }
 
-a {
-    all: unset;
-}
 
 a:hover {
     cursor: pointer;
 }
+
+//Refactored Styles
+
+.description {
+    min-height: 100px;
+}
+
+.console {
+    font-family: $regular;
+    box-sizing: border-box;
+    margin: auto;
+    animation: show-console 1s ease-in;
+    width: 800px;
+    height: 450px;
+}
+
+.hello {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+a {
+    all: unset;
+    width: 130px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+@media (max-width: 1400px) {
+    .console {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
