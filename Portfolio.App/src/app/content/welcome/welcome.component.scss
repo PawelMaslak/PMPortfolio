@@ -4,7 +4,6 @@ $regular: "CascadiaCode", Arial, Helvetica, sans-serif;
 .welcome {
     display: flex;
     width: 100%;
-    animation: show-console 1.5s ease-in;
 }
 
 .bold {
@@ -33,24 +32,38 @@ li {
     font-size: 0.8vw;
 }
 
-@keyframes show-console {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .desc {
     background-color: #e0ffff;
+    animation: show-description 2s ease-in;
 }
 
 .photo {
     z-index: -1;
+    animation: show-photo 2s ease-in;
+}
+
+@keyframes show-photo {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes show-description {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .text-container {
@@ -99,7 +112,6 @@ li {
 
     .desc {
         width: 80vw;
-        //height: 55vh;
         margin-left: 5vh;
         margin-top: -20vh;
     }

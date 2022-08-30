@@ -11,6 +11,7 @@
     grid-template-columns: 100%;
     opacity: 0;
     transition: opacity 1s ease-in;
+    overflow: hidden;
 }
 
 .loader {
