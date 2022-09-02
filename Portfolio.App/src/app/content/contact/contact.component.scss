@@ -110,9 +110,17 @@ a:hover {
     flex-flow: column;
 }
 
+.desc-body {
+    font-size: .8vw;
+}
+
 @media (max-width: 1400px) {
     .console {
         width: 800px;
+    }
+
+    .desc-body {
+        font-size: 1.1vw;
     }
 }
 
@@ -120,17 +128,29 @@ a:hover {
     .console {
         width: 50vw;
     }
+
+    .desc-body {
+        font-size: 1.3vw;
+    }
 }
 
 @media (max-width: 992px) {
     .console {
         width: 50vw;
     }
+
+    .desc-body {
+        font-size: 1.5vw;
+    }
 }
 
 @media (max-width: 768px) {
     .console {
         width: 65vw;
+    }
+
+    .desc-body {
+        font-size: 2vh;
     }
 }
 

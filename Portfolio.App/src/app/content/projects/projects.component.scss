@@ -79,6 +79,14 @@ fa-icon {
     margin: 10px;
 }
 
+.techstack {
+    font-size: .7vw;
+}
+
+.description {
+    font-size: .8vw;
+}
+
 @media (max-width: 1400px) {
     .text-container .text-box {
         width: 320px;
@@ -88,6 +96,11 @@ fa-icon {
     .techstack {
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: 1.1vw;
+    }
+
+    .description {
+        font-size: 1.1vw;
     }
 }
 
@@ -101,6 +114,14 @@ fa-icon {
         height: 350px;
         border-radius: 10px;
     }
+
+    .description {
+        font-size: 1.3vw;
+    }
+
+    .techstack {
+        font-size: 1.3vw;
+    }
 }
 
 @media (max-width: 992px) {
@@ -112,13 +133,29 @@ fa-icon {
         width: 50vw;
         border-radius: 15px;
     }
+
+    .description {
+        font-size: 1.5vw;
+    }
+
+    .techstack {
+        font-size: 1.5vw;
+    }
 }
 
 @media (max-width: 768px) {
     .text-container .text-box {
-        width: 65vw;
+        width: 50vw;
         border-radius: 15px;
-        height: 400px;
+        height: 350px;
+    }
+
+    .description {
+        font-size: 2vh;
+    }
+
+    .techstack {
+        font-size: 2vh;
     }
 }
 
